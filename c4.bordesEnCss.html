@@ -27,13 +27,15 @@
         - border-bottom: ;
         - border-left: ;
         -border-rigth: ;
-        Obs.: esots atributos tienen el estilo "solid" por defecto
+        Obs.: esots atributos tienen el estilo "solid" por defecto 
         */
         & .tx12{border-left: solid 3px red;}
         }
         .S2{
           & .bx1{
             border: solid 2px black;
+            outline: solid 3px mediumvioletred; /* Es equivalente al border */
+            outline-offset: 3px; /*Es equivalente al padding*/
           }
           & .bx2{
             border: solid 3px purple;
@@ -44,6 +46,10 @@
           border-radius: 0px 10px 0px;
          }
          }
+         /*
+         Al igual que border-style, tambien existe un borde fuera del margen que se puede estilizar. Para seleccionar se utiliza el atributo 'outline-style'
+         Al igual que border-style
+         */
     </style>
 </head>
 <body>
@@ -64,7 +70,7 @@
          <h3 class="tx2">Borde simplificado</h3>
     </section>
     <section class="s2">
-      <div class="bx1">BOX 1</div>
+      <br><div class="bx1">BOX 1</div><br>
       <div class="bx2">BOX 2</div>
       <div class="bx3">BOX 3</div>
       <div class="bx4">BOX 4</div>
